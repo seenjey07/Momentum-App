@@ -1,0 +1,288 @@
+@font-face {
+	font-family: 'Candara';
+	font-style: normal;
+	font-weight: lighter;
+	src: url('candara-font-family/Candara.ttf') format('truetype');
+}
+  
+@font-face {
+	font-family: 'Candara';
+	font-style: normal;
+	font-weight: bold;
+	src: url('candara-font-family/Candara_Bold.ttf') format('truetype');
+}
+  
+html, body {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+	background-image: url(MountMayon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Candara;
+}
+
+#momentumPage {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.40;
+	z-index: 0;
+}
+
+.column {
+	display: grid;
+	width: 100%;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.leftSection, .rightSection {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	position: static;
+}
+
+.leftSection {
+	text-align: left;
+	margin: 30px 0 5px 10px;
+}
+
+.rightSection {
+	padding: 0px;
+	border-radius: 5px;
+}
+
+.toDoList {
+	text-align: center;
+	margin: 30px 5px 5px 0;
+	position: relative;
+	padding: 0px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.inputNameClass {
+	text-align: center;
+}
+
+#greetingsOne, #mainFocus {
+	font-size: 30pt;
+	margin: 37px 0 0 0;
+}
+
+#greetingsTwo {
+	font-size: 36pt;
+}
+
+#inputName, #inputFocusContainer {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1mm solid lightgray;
+	font-size: 24pt;
+	font-family: Candara;
+	background-image: transparent;
+	outline: none;
+}
+
+#defaultQuote {
+	font-style: italic;
+	font-size: 13px;
+	color: white;
+}
+
+#quoteAuthor {
+	font-style: italic;
+	font-size: 12px;  
+	color: white;
+}
+
+#newQuoteInput {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1mm solid lightgray;
+	font-size: 8pt;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	text-align: center;
+	color: white;
+}
+
+#changeQuoteButton, #inputToDoContainer {
+	color: white;
+	background: transparent;
+	border: 1px solid lightgray;
+	padding: 5px 8px;
+	cursor: pointer;
+	font-size: 10pt;
+	text-align: center; 
+	font-family: Candara;
+	font-weight: bold;
+	outline: none;
+	border-radius: 5px;
+}
+
+#focusTodayContainer, #inputNameDiv {
+	margin: 18px 0 0 0;
+	padding: 0px;
+	background: transparent;
+}
+
+#quoteContainer {
+	color: white;
+	margin: 35px 0 0 0;
+}
+
+#quoteOption {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: white;
+}
+
+#backgroundImageInfoContainer {
+	font-size: 9pt;
+	color: white;
+	font-family: Candara;
+	font-weight: bold;
+}
+
+.greetingsClass, .inputFocusClass {
+	text-align: center;
+	color: white;
+	margin: 20px 0 0 0;
+}
+
+#inputFocusContainer {
+	margin: 20px 0 0 10px;
+	padding: 10px 0 0 10px;
+	background: transparent;
+	text-align: center;
+}
+
+#inputName {
+	margin: 20px 0 0 10px;
+	padding: 0;
+	background: transparent;
+	text-align: center;
+	color: white;
+}
+
+#todayText {
+	font-size: 27pt;
+	font-variant-caps: all-small-caps;
+}
+
+#theFocusList {
+	margin: 0;
+	padding: 0;
+}
+
+#theFocusList li {
+	list-style: none;
+	margin-bottom: 10px;
+	font-size: 35pt;
+	padding-inline-start: 0;
+}
+
+#clockHere {
+	font-size: 70px;
+	margin: 41px 0 0 0;
+}
+
+#theInputToDoList {
+	list-style: none;
+	color: white;
+	padding-inline-start: 0;
+	font-family: Candara;
+	margin: 0;
+	padding: 0;
+}
+
+#theInputToDoList li {
+	display: flex;
+	justify-content: stretch;
+	color: white;
+	font-size: 9pt;
+}
+
+.remove-button, checkbox {
+	font-size: 7pt;
+	border: none;
+	color: #ce4040;
+	background: transparent;
+}
+
+#addToDo {
+	background: transparent;
+	color: white;
+	font-family: Candara;
+	padding: 5px 10px;
+	cursor: pointer;
+	border: none;
+}
+
+.toDoListContainer {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	max-width: fit-content;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: white;
+}
+
+#addFocus {
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	font-family: Candara;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.quoteContainer, .middleSection {
+	padding: 0px;
+	border-radius: 5px;
+	margin: 20px 0 0 0;
+}  
+
+#inputFocusContainer::placeholder, #inputName::placeholder, #newQuoteInput::placeholder, #inputToDoContainer::placeholder {
+	color: white;
+}

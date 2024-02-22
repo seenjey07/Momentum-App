@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Replit Activity - Momentum App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="momentumPage">
+
+    <div class="column leftSection">
+        <p class="leftSection" id="backgroundImageInfoContainer">Mt. Mayon and Sumlang Lake in Albay, Bicol,
+          Philippines</p>
+    </div>
+
+		<div class="column middleSection">
+			<div class="greetingsClass" id="greetingContainer">
+				<span class="greetingsClass" id="greetingsTwo">Hello!<span id="userName"></span></span><br>
+				<span class="greetingsClass" id="greetingsOne">How are you?</span>
+				<div id="inputNameDiv">
+					<input class="greetingsClass" id="inputName" type="text" placeholder="Enter your name to start" size="20"
+						autocomplete="off">
+				</div>
+			</div>
+			
+			<div id="clockContainer">
+				<p id="clockHere">00:00</p>
+			</div>
+			
+			<div class="focusToday" id="focusTodayContainer">
+				<p class="whatFocusQuestion" id="mainFocus">What is your main focus today?</p>
+				<input class="inputFocusClass" id="inputFocusContainer" type="text" placeholder="Add Focus" size="20"
+					autocomplete="off">
+				<button id="addFocus">+</button>
+				<label id="todayText"></label>
+				<ul id="theFocusList"></ul>
+			</div>
+			
+			<div class="quoteContainer">
+				<span id="defaultQuote">"Success is not final; failure is not fatal: it is the courage to continue that
+					counts."</span><br>
+				<span id="quoteAuthor"><em>- Winston Churchill</em></span>
+				<div class="quoteOption">
+					<button id="changeQuoteButton">Change Quote</button>
+					<input id="newQuoteInput" type="text" placeholder="Type a new quote" autocomplete="off">
+				</div>
+			</div>
+		</div>  
+    
+		<div class="column rightSection">
+      <div class="toDoList">
+        <div class="toDoSection" id="toDoSectionContainer">
+          <input id="inputToDoContainer" type="text" placeholder="Add To-Do" size="8" autocomplete="off">
+          <button id="addToDo">+</button>
+        	  <div class="toDoListContainer">
+          	  <ul id="theInputToDoList"></ul>
+          	</div>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
